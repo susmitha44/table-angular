@@ -1,0 +1,23 @@
+<user-count [all]="getTotalusercount()"
+            [one]="getTotaloneusercount()"                                 >
+</user-count>
+
+<table>
+
+  <thead>
+  <tr>
+    <th>userId</th>
+    <th>id</th>
+    <th>title</th>
+    <th>body</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{user.userId}}</td>
+    <td>{{user.id}}</td>
+    <td>{{user.title}}</td>
+    <td>{{user.body}}</td>
+  </tr>
+  </tbody>
+</table>
